@@ -49,7 +49,7 @@ footer_content: "Copyright ⓒ HANSSAK Corp. All rights reserved."
 permalink: pretty
 exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile", "docs/tests/"]
 
-# remote_theme: pmarsceill/just-the-docs
+remote_theme: pmarsceill/just-the-docs
 #theme: just-the-docs
 plugins:
   - jekyll-seo-tag
