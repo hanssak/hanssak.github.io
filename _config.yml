@@ -58,7 +58,7 @@ footer_content: "Copyright ⓒ HANSSAK Corp. All rights reserved."
 
 
 # Build settings
-theme: just-the-docs
+theme: jekyll-theme-architect
 plugins:
   - jekyll-feed
 
