@@ -43,7 +43,12 @@ footer_content: "Copyright ⓒ HANSSAK Corp. All rights reserved."
 
 
 
-
+opennetlink:
+        collections:
+                docs:
+                        name: Documentation
+                        nav_exclude: true
+                        search_exclude: true
 
 
 email: your-email@example.com
