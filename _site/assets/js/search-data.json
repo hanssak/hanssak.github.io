@@ -1,0 +1,158 @@
+{"0": {
+    "doc": "CodingRole",
+    "title": "CodingRole",
+    "content": "1. Coding 원칙 . | 주석은 모든 코드에 상세히 기술하는 것을 원칙으로 한다. | 소스 코드는 불가피한 내용을 제외하고 원칙적으로 중복을 금지한다. | 소스 코드에서 사용하는 모든 단어는 용어사전의 내용을 기준으로 한다. | 개발 및 테스트를 수행함에 있어 기능과 성능은 물론 보안에도 각별한 주의를 기울인다. | . 2. Coding Style . 코딩 스타일은 소스개발에 대한 규칙을 정의하는 것으로 표준화와 일관성을 확보하는 것을 목적으로 한다. 2.1 indent . | indent는 tab을 사용하지 않고, space만 사용한다. | indent의 크기는 4로 한다. | . 2.2 space . | 한 줄에는 하나의 statement만 기술한다. | semicolon, comma, 예약어 뒤에는space를 둔다. | unary operation은 space를 두지 않는다. (ex. i++;) | binary operation은 양쪽에 space를 둔다. (ex. i = i + 1;) | 괄호 안에 괄호가 있는 경우에는 괄호 사이에 space를 두지 않는다. | . 2.3 brace . | ‘{’와 ‘}’는 새로운 라인에 기술하며, 다른 내용과 함께 기술하지 않는다. (주석 제외) | ‘{’는 기존의 ‘{’ 와 비교해서 indent(4-space)를 준다. | ‘}’는 짝이 되는 ‘{’과 동일하게 indent(4-space)를 준다. | brace에 주석을 기입하는 경우 ‘//’주석을 사용한다. | . 2.4 용어 . | 용어는 원칙적으로 용어사전을 준수하여 용어명에 맞는 영문을 사용한다. | 하나의 단어를 사용하는 경우에는 용어영문명을 사용한다. | 여러개의 단어를 조합하여 사용하는 경우에는 영어약어명을 조합해서 사용한다. | 용어를 사용할 때 동음이의어에 주의한다. | 사용될 시스템 코드는 다음과 같이 영문 3자로 정의한다. | . 2.5 Logging . | Log는 debug, info, warn, error로 구별하여 사용한다. | Log는 반드시 발생 시간과 위치 그리고 내용을 포함한다. | Log는 한 줄만 출력한다.(debug log 제외) | debug log는 개발자가 개발 시에만 사용하고, 운영 중에는 사용하지 않는다. | info log는 운영자에게 도움이 될 내용을 기록한다. | warn log는 error는 아니나 잠재적인 error의 발생이 가능한 내용을 기록한다. | error log는 error code와 함께 error에 대한 내용을 기록한다. | . 2.6 file명명 및 Line . | file이름은 50자를 넘지 않도록 한다. | file명은 용어사전의 내용을 기준으로 작성하며, 특수기호 및 숫자는 사용하지 않는다. | . 3. UI . | 절대 path 사용을 원칙으로 한다. | sub-system 이하로 directory는 3-level 이하로 구성한다. | 파일은 최하위 directory에만 위치한다. | system명과 sub-system명은 용어 영문명이나 영문약어명의 첫 글자를 조합하여 가능한 3글자로 작성하되 6글자 이하로 작성한다. | directory에서 사용하는 system명과 sub-system명은 소문자만 사용한다. | . ",
+    "url": "http://localhost:4000/OpenNetLink/docs/git_guide/CODING_ROLE.html",
+    "relUrl": "/docs/git_guide/CODING_ROLE.html"
+  },"1": {
+    "doc": "ContributeGuide",
+    "title": "컨트리뷰터 가이드",
+    "content": "GitHub를 통해 협업을 처음한다면 어색하거나 어려운 부분이 있을 수 있지만 편안하게 임할수록 더 잘 배울 수 있습니다. 첫 번째 기여를 하려면 그저 아래의 간단한 단계를 따르면 됩니다. 지금 Git이 없으면 설치하시기 바랍니다. ",
+    "url": "http://localhost:4000/OpenNetLink/docs/git_guide/CONTRIBUTE_GUIDE.html#%EC%BB%A8%ED%8A%B8%EB%A6%AC%EB%B7%B0%ED%84%B0-%EA%B0%80%EC%9D%B4%EB%93%9C",
+    "relUrl": "/docs/git_guide/CONTRIBUTE_GUIDE.html#컨트리뷰터-가이드"
+  },"2": {
+    "doc": "ContributeGuide",
+    "title": "저장소 Fork하기",
+    "content": "이 페이지의 위에 있는 Fork 버튼을 클릭하여 이 저장소를 Fork하세요. 그러면 자신의 계정에 이 저장소의 복제본이 생성될 겁니다. ",
+    "url": "http://localhost:4000/OpenNetLink/docs/git_guide/CONTRIBUTE_GUIDE.html#%EC%A0%80%EC%9E%A5%EC%86%8C-fork%ED%95%98%EA%B8%B0",
+    "relUrl": "/docs/git_guide/CONTRIBUTE_GUIDE.html#저장소-fork하기"
+  },"3": {
+    "doc": "ContributeGuide",
+    "title": "저장소 복제하기",
+    "content": ". 이제 이 저장소를 자신의 컴퓨터에 복제합니다. 복제 버튼을 클릭하고 클립보드로 복사 아이콘을 클릭합니다. 터미널을 열고 다음 Git 명령을 실행합니다: . git clone \"방금 복사한 주소\" . (따옴표를 제외한) “방금 복사한 주소”는 이 저장소의 주소입니다. 주소를 얻으려면 이전 단계를 참조하세요. 예시: . git clone https://github.com/your_id/OpenNetLink.git . your_id는 당신의 깃허브 계정입니다. 여기서 깃허브에 있는 OneNetLink 저장소의 내용을 컴퓨터에 복사합니다. ",
+    "url": "http://localhost:4000/OpenNetLink/docs/git_guide/CONTRIBUTE_GUIDE.html#%EC%A0%80%EC%9E%A5%EC%86%8C-%EB%B3%B5%EC%A0%9C%ED%95%98%EA%B8%B0",
+    "relUrl": "/docs/git_guide/CONTRIBUTE_GUIDE.html#저장소-복제하기"
+  },"4": {
+    "doc": "ContributeGuide",
+    "title": "브랜치 생성하기",
+    "content": "아직 저장소 디렉토리에 있지 않다면 그곳으로 이동합니다. cd OpenNetLink . 이제 git checkout 명령을 사용하여 브랜치를 생성합니다. git checkout -b &lt;add_your_id&gt; . 예시: . git checkout -b add_johndoe . (브랜치의 이름에 꼭 add가 들어가지 않아도 됩니다. 하지만 이 브랜치의 목적은 당신의 이름을 리스트에 추가하는 것이기 때문에 이름에 add를 포함하는 것이 타당합니다.) . ",
+    "url": "http://localhost:4000/OpenNetLink/docs/git_guide/CONTRIBUTE_GUIDE.html#%EB%B8%8C%EB%9E%9C%EC%B9%98-%EC%83%9D%EC%84%B1%ED%95%98%EA%B8%B0",
+    "relUrl": "/docs/git_guide/CONTRIBUTE_GUIDE.html#브랜치-생성하기"
+  },"5": {
+    "doc": "ContributeGuide",
+    "title": "필요한 변경사항을 작성하고 커밋하기",
+    "content": "이제 텍스트 편집기에서 CONTRIBUTORS.md 파일을 열어서 편집을 합니다. Markdown을 어떻게 사용하는지는 이 치트시트를 참조하세요. CONTRIBUTORS.md의 마지막에 하기의 정보를 추가하세요. - [your-name](https://github.com/your_id) . 예시: . - [John Doe](https://github.com/johndoe) . ]( 사이에 스페이스가 없다는 것에 주의하시기 바랍니다. 파일을 저장하고 종료하세요. 프로젝트 디렉터리에서 git status 명령을 실행하면 변경사항을 볼 수 있습니다. 변경사항을 아래 git add 명령으로 추가합니다. git add CONTRIBUTORS.md . 이제 아래 git commit 명령으로 변경사항을 커밋합니다. git commit -m \"Add &lt;your_id&gt; to Contributors list\" . &lt;your_id&gt;을 자신의 github 계정으로 바꾸세요. ",
+    "url": "http://localhost:4000/OpenNetLink/docs/git_guide/CONTRIBUTE_GUIDE.html#%ED%95%84%EC%9A%94%ED%95%9C-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EC%9E%91%EC%84%B1%ED%95%98%EA%B3%A0-%EC%BB%A4%EB%B0%8B%ED%95%98%EA%B8%B0",
+    "relUrl": "/docs/git_guide/CONTRIBUTE_GUIDE.html#필요한-변경사항을-작성하고-커밋하기"
+  },"6": {
+    "doc": "ContributeGuide",
+    "title": "변경사항을 깃허브에 푸시하기",
+    "content": "git push 명령으로 변경사항을 푸시합니다. git push origin &lt;add_your_id&gt; . &lt;add-your-name&gt;을 이전에 생성한 브랜치 이름으로 바꾸세요. ",
+    "url": "http://localhost:4000/OpenNetLink/docs/git_guide/CONTRIBUTE_GUIDE.html#%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EA%B9%83%ED%97%88%EB%B8%8C%EC%97%90-%ED%91%B8%EC%8B%9C%ED%95%98%EA%B8%B0",
+    "relUrl": "/docs/git_guide/CONTRIBUTE_GUIDE.html#변경사항을-깃허브에-푸시하기"
+  },"7": {
+    "doc": "ContributeGuide",
+    "title": "검토를 위해 변경사항을 제출하기",
+    "content": "깃허브의 당신의 저장소에 가면, Compare &amp; pull request 버튼을 볼 수 있습니다. 그 버튼을 클릭하세요. 이제 풀 요청을 제출합니다. 이제 여러분의 변경사항을 제가 확인 후에 마스터 브랜치에 머지 하게 되면 알림 메일을 받으실 수 있습니다. ",
+    "url": "http://localhost:4000/OpenNetLink/docs/git_guide/CONTRIBUTE_GUIDE.html#%EA%B2%80%ED%86%A0%EB%A5%BC-%EC%9C%84%ED%95%B4-%EB%B3%80%EA%B2%BD%EC%82%AC%ED%95%AD%EC%9D%84-%EC%A0%9C%EC%B6%9C%ED%95%98%EA%B8%B0",
+    "relUrl": "/docs/git_guide/CONTRIBUTE_GUIDE.html#검토를-위해-변경사항을-제출하기"
+  },"8": {
+    "doc": "ContributeGuide",
+    "title": "ContributeGuide",
+    "content": " ",
+    "url": "http://localhost:4000/OpenNetLink/docs/git_guide/CONTRIBUTE_GUIDE.html",
+    "relUrl": "/docs/git_guide/CONTRIBUTE_GUIDE.html"
+  },"9": {
+    "doc": "Git Guide",
+    "title": "Git Guide Components",
+    "content": "Git Guide Page Content . ",
+    "url": "http://localhost:4000/OpenNetLink/docs/git-guide-components#git-guide-components",
+    "relUrl": "/docs/git-guide-components#git-guide-components"
+  },"10": {
+    "doc": "Git Guide",
+    "title": "Git Guide",
+    "content": " ",
+    "url": "http://localhost:4000/OpenNetLink/docs/git-guide-components",
+    "relUrl": "/docs/git-guide-components"
+  },"11": {
+    "doc": "Release Notes",
+    "title": "Release Notes",
+    "content": "Release notes will be released after QA is successful. Changes are written on a new, update, bug, or test basis. Testing . Test is also conducted with several OS platform tests such as Harmonikr OS, Tmax OS, and Gooroom OS. ",
+    "url": "http://localhost:4000/OpenNetLink/docs/ReleaseNote.html",
+    "relUrl": "/docs/ReleaseNote.html"
+  },"12": {
+    "doc": "About",
+    "title": "About",
+    "content": "This is the base .Net Core + Blazor. For detailed information and user manual of Cross Platform, please refer to Microsoft .Net Core + Blazor. You can find the source code for Microsoft Blazor . You can find the source code for Microsoft .NETCore . ",
+    "url": "http://localhost:4000/OpenNetLink/about/",
+    "relUrl": "/about/"
+  },"13": {
+    "doc": "Home",
+    "title": "Welcome to the OpenNetLink Project.",
+    "content": "Get started now View it on GitHub . ",
+    "url": "http://localhost:4000/OpenNetLink/#welcome-to-the-opennetlink-project",
+    "relUrl": "/#welcome-to-the-opennetlink-project"
+  },"14": {
+    "doc": "Home",
+    "title": "Introduce",
+    "content": "OpenNetLink Project is CrossPlatform(.Net Core + Blazor) based on the development of OpenNetLink (network-connected agent). You want to develop a cross-platform-based program or work on a project through collaboration, please do not hesitate to participate. You are working on a collaborative project for the first time through GitHub, please refer to the Contributor Guide Doc. ",
+    "url": "http://localhost:4000/OpenNetLink/#introduce",
+    "relUrl": "/#introduce"
+  },"15": {
+    "doc": "Home",
+    "title": "Getting started",
+    "content": "To download the source code, you can select one of the two methods below and execute it. | Git Clone git clone https://github.com/hanssak/OpenNetLink.git . | Git Archive Download wget https://github.com/hanssak/OpenNetLink/archive/master.zip . | . ",
+    "url": "http://localhost:4000/OpenNetLink/#getting-started",
+    "relUrl": "/#getting-started"
+  },"16": {
+    "doc": "Home",
+    "title": "Coding Rules",
+    "content": "Please refer to Define Coding Rules for unification of coding style when developing a project. ",
+    "url": "http://localhost:4000/OpenNetLink/#coding-rules",
+    "relUrl": "/#coding-rules"
+  },"17": {
+    "doc": "Home",
+    "title": "Home",
+    "content": " ",
+    "url": "http://localhost:4000/OpenNetLink/",
+    "relUrl": "/"
+  },"18": {
+    "doc": "NetworkLibrary",
+    "title": "Network Library structure",
+    "content": ". ",
+    "url": "http://localhost:4000/OpenNetLink/docs/opennetlink/networklibrary.html#network-library-structure",
+    "relUrl": "/docs/opennetlink/networklibrary.html#network-library-structure"
+  },"19": {
+    "doc": "NetworkLibrary",
+    "title": "NetworkLibrary",
+    "content": " ",
+    "url": "http://localhost:4000/OpenNetLink/docs/opennetlink/networklibrary.html",
+    "relUrl": "/docs/opennetlink/networklibrary.html"
+  },"20": {
+    "doc": "OpenNetLink",
+    "title": "OpenNetLink Structre Components",
+    "content": "OpenNetLink Structre Page Content . ",
+    "url": "http://localhost:4000/OpenNetLink/docs/opennetlink#opennetlink-structre-components",
+    "relUrl": "/docs/opennetlink#opennetlink-structre-components"
+  },"21": {
+    "doc": "OpenNetLink",
+    "title": "OpenNetLink",
+    "content": " ",
+    "url": "http://localhost:4000/OpenNetLink/docs/opennetlink",
+    "relUrl": "/docs/opennetlink"
+  },"22": {
+    "doc": "Structure",
+    "title": "OpenNetLink",
+    "content": ". | Framework Stack structure | . ",
+    "url": "http://localhost:4000/OpenNetLink/docs/opennetlink/structure.html#opennetlink",
+    "relUrl": "/docs/opennetlink/structure.html#opennetlink"
+  },"23": {
+    "doc": "Structure",
+    "title": "Structure",
+    "content": " ",
+    "url": "http://localhost:4000/OpenNetLink/docs/opennetlink/structure.html",
+    "relUrl": "/docs/opennetlink/structure.html"
+  },"24": {
+    "doc": "UIClass",
+    "title": "UI class structure",
+    "content": ". ",
+    "url": "http://localhost:4000/OpenNetLink/docs/opennetlink/uiclass.html#ui-class-structure",
+    "relUrl": "/docs/opennetlink/uiclass.html#ui-class-structure"
+  },"25": {
+    "doc": "UIClass",
+    "title": "UIClass",
+    "content": " ",
+    "url": "http://localhost:4000/OpenNetLink/docs/opennetlink/uiclass.html",
+    "relUrl": "/docs/opennetlink/uiclass.html"
+  }
+}
