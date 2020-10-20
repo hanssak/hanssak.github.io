@@ -47,18 +47,11 @@ footer_content: "Copyright ⓒ HANSSAK Corp. All rights reserved."
 
 
 
-#OpenNetLink:
-#        collections:
-#                docs:
-#                        name: Documentation
-#                        nav_exclude: true
-#                        search_exclude: true
-#
-
 
 
 # Build settings
-theme: just-the-docs
+remote_theme: pmarsceill/just-the-docs
+ #theme: just-the-docs
 plugins:
   - jekyll-feed
 
