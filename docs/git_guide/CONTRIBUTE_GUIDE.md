@@ -5,121 +5,119 @@ parent: Git Guide
 nav_order: 2
 ---
 
+# Contributor Guide
 
-# 컨트리뷰터 가이드
+If you are new to collaborating through GitHub, there may be some awkward or difficult parts, but the more comfortable you are, the better you will learn.
 
-GitHub를 통해 협업을 처음한다면 어색하거나 어려운 부분이 있을 수 있지만 편안하게 임할수록 더 잘 배울 수 있습니다. 
+To make your first contribution, just follow the simple steps below.
 
-첫 번째 기여를 하려면 그저 아래의 간단한 단계를 따르면 됩니다.
+<img align="right" width="300" src="https://raw.githubusercontent.com/hanssak/hanssak.github.io/tmp/docs/git_guide/repo/fork.png" alt="This repository Fork" />
 
-<img align="right" width="300" src="https://raw.githubusercontent.com/hanssak/hanssak.github.io/tmp/docs/git_guide/repo/fork.png" alt="이 저장소 포크하기" />
+If you do not have Git right now, please [Install](https://help.github.com/articles/set-up-git/).
 
-지금 Git이 없으면 [설치](https://help.github.com/articles/set-up-git/)하시기 바랍니다.
+## Fork the repository
 
-## 저장소 Fork하기
+Fork this repository by clicking the Fork button at the top of this page. This will create a replica of this repository in your account.
 
-이 페이지의 위에 있는 Fork 버튼을 클릭하여 이 저장소를 Fork하세요. 그러면 자신의 계정에 이 저장소의 복제본이 생성될 겁니다.
+## Cloning the repository
 
-## 저장소 복제하기
+<img align="right" width="300" src="https://raw.githubusercontent.com/hanssak/hanssak.github.io/tmp/docs/git_guide/repo/clone.png" alt="This repository Duplicate" />
 
-<img align="right" width="300" src="https://raw.githubusercontent.com/hanssak/hanssak.github.io/tmp/docs/git_guide/repo/clone.png" alt="이 저장소 복제하기" />
+Now clone this repository to your computer. Click the Duplicate button and click the Copy to Clipboard icon.
 
-이제 이 저장소를 자신의 컴퓨터에 복제합니다. 복제 버튼을 클릭하고 클립보드로 복사 아이콘을 클릭합니다.
-
-터미널을 열고 다음 Git 명령을 실행합니다:
+Open a terminal and run the following Git command:
 
 ```
-git clone "방금 복사한 주소"
+git clone "address just copied"
 ```
 
-(따옴표를 제외한) "방금 복사한 주소"는 이 저장소의 주소입니다. 주소를 얻으려면 이전 단계를 참조하세요.
+"The address you just copied" (without the quotes) is the address of this repository. Refer to the previous steps to get the address.
 
-<img align="right" width="300" src="https://raw.githubusercontent.com/hanssak/hanssak.github.io/tmp/docs/git_guide/repo/copy-to-clipboard.png" alt="URL 을 클립보드로 복사" />
+<img align="right" width="300" src="https://raw.githubusercontent.com/hanssak/hanssak.github.io/tmp/docs/git_guide/repo/copy-to-clipboard.png" alt ="Copy URL to clipboard" />
 
-예시:
+example:
 
 ```
 git clone https://github.com/your_id/OpenNetLink.git
 ```
 
-`your_id`는 당신의 깃허브 계정입니다. 여기서 깃허브에 있는
-OneNetLink 저장소의 내용을 컴퓨터에 복사합니다.
+`your_id` is your GitHub account. Here on GitHub
+Copy the contents of the OneNetLink repository to your computer.
 
-## 브랜치 생성하기
+## create branch
 
-아직 저장소 디렉토리에 있지 않다면 그곳으로 이동합니다.
+If it's not already in the repository directory, go there
 
 ```
 cd OpenNetLink
 ```
 
-이제 `git checkout` 명령을 사용하여 브랜치를 생성합니다.
+Now create a branch using the `git checkout` command.
 
 ```
 git checkout -b <add_your_id>
 ```
 
-예시:
+example:
 
 ```
 git checkout -b add_johndoe
 ```
 
-(브랜치의 이름에 꼭 *add*가 들어가지 않아도 됩니다. 하지만 이 브랜치의 목적은 당신의 이름을 리스트에 추가하는 것이기 때문에 이름에 *add*를 포함하는 것이 타당합니다.)
+(You don't have to include *add* in the branch name.
+However, since the purpose of this branch is to add your name to the list, it makes sense to include *add* in the name.)
 
-## 필요한 변경사항을 작성하고 커밋하기
+## Make the necessary changes and commit
 
-이제 텍스트 편집기에서 `CONTRIBUTORS.md` 파일을 열어서 편집을 합니다.
-Markdown을 어떻게 사용하는지는 이 [치트시트](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)를 참조하세요.
+Now open the `CONTRIBUTORS.md` file in a text editor and edit it.
+Please refer to this [cheat sheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet) for how to use Markdown.
 
-`CONTRIBUTORS.md`의 마지막에 하기의 정보를 추가하세요.
-
-```
-- [your-name](https://github.com/your_id)
-```
-
-예시:
+Add the following information to the end of `CONTRIBUTORS.md`.
 
 ```
-- [John Doe](https://github.com/johndoe)
+-[your-name](https://github.com/your_id)
 ```
 
-`](` 사이에 스페이스가 없다는 것에 주의하시기 바랍니다. 파일을 저장하고 종료하세요.
+example:
 
-프로젝트 디렉터리에서 `git status` 명령을 실행하면 변경사항을 볼 수 있습니다. 변경사항을 아래 `git add` 명령으로 추가합니다.
+```
+-[John Doe](https://github.com/johndoe)
+```
+
+Please note that there is no space between `](`. Save the file and exit.
+
+You can see the changes by running the `git status` command in your project directory. Add the changes with the `git add` command below.
 
 ```
 git add CONTRIBUTORS.md
 ```
 
-이제 아래 `git commit` 명령으로 변경사항을 커밋합니다.
+Now commit the changes with the `git commit` command below.
 
 ```
 git commit -m "Add <your_id> to Contributors list"
 ```
 
-`<your_id>`을 자신의 github 계정으로 바꾸세요.
+Replace `<your_id>` with your github account.
 
-## 변경사항을 깃허브에 푸시하기
+## Push your changes to GitHub
 
-`git push` 명령으로 변경사항을 푸시합니다.
+Push the changes with the `git push` command.
 
 ```
 git push origin <add_your_id>
 ```
 
-`<add-your-name>`을 이전에 생성한 브랜치 이름으로 바꾸세요.
+Replace `<add-your-name>` with the name of the branch you created earlier.
 
-## 검토를 위해 변경사항을 제출하기
+## Submit changes for review
 
-깃허브의 당신의 저장소에 가면, `Compare & pull request` 버튼을 볼 수 있습니다. 그 버튼을 클릭하세요.
+If you go to your repository on GitHub, you can see the `Compare & pull request` button. Click that button.
 
-<img style="float: right;" src="https://raw.githubusercontent.com/hanssak/hanssak.github.io/tmp/docs/git_guide/repo/compare-and-pull.png" alt="풀 요청
-생성하기" />
+<img style="float: right;" src="https://raw.githubusercontent.com/hanssak/hanssak.github.io/tmp/docs/git_guide/repo/compare-and-pull.png" alt="Pull request Create" />
 
-이제 풀 요청을 제출합니다.
+Now submit your pull request.
 
-<img style="float: right;" src="https://raw.githubusercontent.com/hanssak/hanssak.github.io/tmp/docs/git_guide/repo/submit-pull-request.png" alt="풀 요청 제출하기"
-/>
+<img style="float: right;" src="https://raw.githubusercontent.com/hanssak/hanssak.github.io/tmp/docs/git_guide/repo/submit-pull-request.png" alt="Submit a pull request"/>
 
-이제 여러분의 변경사항을 제가 확인 후에 마스터 브랜치에 머지 하게 되면 알림 메일을 받으실 수 있습니다.
+Now, after I check your changes, you will receive a notification email when merging to the master branch.
