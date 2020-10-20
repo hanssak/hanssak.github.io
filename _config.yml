@@ -47,15 +47,26 @@ footer_content: "Copyright ⓒ HANSSAK Corp. All rights reserved."
 
 # Build settings
 permalink: pretty
+exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile", "docs/tests/"]
+
 #remote_theme: pmarsceill/just-the-docs
 #theme: just-the-docs
 plugins:
   - jekyll-seo-tag
 
 
+kramdown:
+  syntax_highlighter_opts:
+    block:
+      line_numbers: false
 
-
-
+compress_html:
+  clippings: all
+  comments: all
+  endings: all
+  startings: []
+  blanklines: false
+  profile: false
 
 
 
@@ -70,8 +81,8 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-exclude:
-   - Gemfile.lock
+#exclude:
+#   - Gemfile.lock
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
