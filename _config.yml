@@ -45,11 +45,8 @@ back_to_top_text: "Back to top"
 footer_content: "Copyright ⓒ HANSSAK Corp. All rights reserved."
 
 
-
-
-
-
 # Build settings
+permalink: pretty
 remote_theme: pmarsceill/just-the-docs
  #theme: just-the-docs
 plugins:
