@@ -18,7 +18,8 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-#logo   : ""
+logo                    : "SecureGate_BI.png"
+github_username         :  hanssak
 title                   : "OpenNetLink"
 baseurl                 : "/OpenNetLink"              # the subpath of your site, e.g. "/blog"
 url                     : "https://hanssak.github.io" # the base hostname & protocol for your site, e.g. http://example.com
@@ -55,8 +56,6 @@ footer_content: "Copyright ⓒ HANSSAK Corp. All rights reserved."
 #
 
 
-twitter_username: jekyllrb
-github_username:  jekyll
 
 # Build settings
 theme: just-the-docs
