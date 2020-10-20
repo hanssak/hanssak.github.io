@@ -21,7 +21,7 @@
 logo                    : "SecureGate_BI.png"
 github_username         :  hanssak
 title                   : "OpenNetLink"
-baseurl                 : ""              # the subpath of your site, e.g. "/blog"
+baseurl                 : "/OpenNetLink"              # the subpath of your site, e.g. "/blog"
 url                     : "https://hanssak.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 
