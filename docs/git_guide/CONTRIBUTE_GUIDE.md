@@ -12,7 +12,7 @@ GitHub를 통해 협업을 처음한다면 어색하거나 어려운 부분이 �
 
 첫 번째 기여를 하려면 그저 아래의 간단한 단계를 따르면 됩니다.
 
-<img align="right" width="300" src="repo/fork.png" alt="이 저장소 포크하기" />
+<img align="right" width="300" src="https://raw.githubusercontent.com/hanssak/hanssak.github.io/tmp/docs/git_guide/repo/fork.png" alt="이 저장소 포크하기" />
 
 지금 Git이 없으면 [설치](https://help.github.com/articles/set-up-git/)하시기 바랍니다.
 
