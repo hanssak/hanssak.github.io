@@ -20,7 +20,7 @@
 
 #logo   : ""
 title                   : "OpenNetLink"
-#baseurl                 : "/opennetlink"              # the subpath of your site, e.g. "/blog"
+baseurl                 : "/OpenNetLink"              # the subpath of your site, e.g. "/blog"
 url                     : "https://hanssak.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 
@@ -36,6 +36,9 @@ aux_links_new_tab: false # 오른쪽 상단 링크 시 new-tab 여부
 heading_anchors: true # 글 앵커 링크 여부 (default: false)
 
 
+#### Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
 
 #### Footer content
 footer_content: "Copyright ⓒ HANSSAK Corp. All rights reserved."
@@ -43,19 +46,13 @@ footer_content: "Copyright ⓒ HANSSAK Corp. All rights reserved."
 
 
 
-opennetlink:
-        collections:
-                docs:
-                        name: Documentation
-                        nav_exclude: true
-                        search_exclude: true
-
-
-email: your-email@example.com
-#description: >- # this means to ignore newlines until "baseurl:"
-#  Write an awesome description for your new site here. You can edit this
-#  line in _config.yml. It will appear in your document head meta (for
-#  Google search results) and in your feed.xml site description.
+#OpenNetLink:
+#        collections:
+#                docs:
+#                        name: Documentation
+#                        nav_exclude: true
+#                        search_exclude: true
+#
 
 
 twitter_username: jekyllrb
@@ -84,12 +81,12 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
+   - Gemfile.lock
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
 #   - Gemfile
-#   - Gemfile.lock
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
