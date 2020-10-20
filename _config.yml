@@ -1,286 +1,93 @@
 # Welcome to Jekyll!
 #
-# This config file is meant for settings that affect your entire site, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# `jekyll serve`. If you change this file, please restart the server process.
-
-# Theme Settings
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
 #
-# Review documentation to determine if you should use `theme` or `remote_theme`
-# https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
 
-# theme                  : "minimal-mistakes-jekyll"
-remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
-
-# Site Settings
-locale                   : "en-US"
-title                    : "OpenNetLink"
-title_separator          : "-"
-subtitle                 : # site tagline that appears below site title in masthead
-name                     : "HANSSAK"
-description              : "OpenNetLink website."
-url                      : "https://hanssak.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "OpenNetLink" # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
-teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
-masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
-# breadcrumbs            : false # true, false (default)
-words_per_minute         : 200
-comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
-  disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-  utterances:
-    theme                : # "github-light" (default), "github-dark"
-    issue_term           : # "pathname" (default)
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
-reCaptcha:
-  siteKey                :
-  secret                 :
-atom_feed:
-  path                   : # blank (default) uses feed.xml
-search                   : # true, false (default)
-search_full_content      : # true, false (default)
-search_provider          : # lunr (default), algolia, google
-algolia:
-  application_id         : # YOUR_APPLICATION_ID
-  index_name             : # YOUR_INDEX_NAME
-  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
-  powered_by             : # true (default), false
-google:
-  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
-  instant_search         : # false (default), true
-# SEO Related
-google_site_verification :
-bing_site_verification   :
-yandex_site_verification :
-naver_site_verification  :
-
-# Social Sharing
-twitter:
-  username               :
-facebook:
-  username               :
-  app_id                 :
-  publisher              :
-og_image                 : # Open Graph/Twitter default site image
-# For specifying social profiles
-# - https://developers.google.com/structured-data/customize/social-profiles
-social:
-  type                   : # Person or Organization (defaults to Person)
-  name                   : # If the user or organization name differs from the site's name
-  links: # An array of links to social media profiles
-
-# Analytics
-analytics:
-  provider               : false # false (default), "google", "google-universal", "google-gtag", "custom"
-  google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+logo                    : "SecureGate_BI.png"
+github_username         :  hanssak
+title                   : "OpenNetLink"
+baseurl                 : "/OpenNetLink"              # the subpath of your site, e.g. "/blog"
+url                     : "https://hanssak.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 
-# Site Author
-author:
-  name             : "Your Name"
-  avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
-  bio              : "I am an **amazing** person."
-  location         : "Somewhere"
-  email            :
-  links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      # url: "mailto:your.name@email.com"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      # url: "https://your-website.com"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url: "https://github.com/"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url: "https://instagram.com/"
 
-# Site Footer
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
+#### Header 
+search_enabled          : true                        # search 
+aux_links:   # 오른쪽 상단 링크
+        "OpenNetLink on GitHub":
+                - "//github.com/hanssak/OpenNetLink"
+aux_links_new_tab: false # 오른쪽 상단 링크 시 new-tab 여부
+
+#### Content
+heading_anchors: true # 글 앵커 링크 여부 (default: false)
 
 
-# Reading Files
-include:
-  - .htaccess
-  - _pages
-exclude:
-  - "*.sublime-project"
-  - "*.sublime-workspace"
-  - vendor
-  - .asset-cache
-  - .bundle
-  - .jekyll-assets-cache
-  - .sass-cache
-  - assets/js/plugins
-  - assets/js/_main.js
-  - assets/js/vendor
-  - Capfile
-  - CHANGELOG
-  - config
-  - Gemfile
-  - Gruntfile.js
-  - gulpfile.js
-  - LICENSE
-  - log
-  - node_modules
-  - package.json
-  - package-lock.json
-  - Rakefile
-  - README
-  - tmp
-  - /docs # ignore Minimal Mistakes /docs
-  - /test # ignore Minimal Mistakes /test
-keep_files:
-  - .git
-  - .svn
-encoding: "utf-8"
-markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+#### Back to top link
+back_to_top: true
+back_to_top_text: "Back to top"
+
+#### Footer content
+footer_content: "Copyright ⓒ HANSSAK Corp. All rights reserved."
 
 
-# Conversion
-markdown: kramdown
-highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
 
 
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
+#OpenNetLink:
+#        collections:
+#                docs:
+#                        name: Documentation
+#                        nav_exclude: true
+#                        search_exclude: true
+#
 
 
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
 
-
-# Outputting
-permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
-paginate_path: /page:num/
-timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-
-# Plugins (previously gems:)
+# Build settings
+theme: just-the-docs
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
   - jekyll-feed
-  - jekyll-include-cache
-
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jekyll-include-cache
-
-
-# Archives
-#  Type
-#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
-#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
-#  Path (examples)
-#  - Archive page should exist at path when using Liquid method or you can
-#    expect broken links (especially with breadcrumbs enabled)
-#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
-#  - <base_path>/categories/my-awesome-category/index.html ~> path: /categories/
-#  - <base_path>/my-awesome-category/index.html ~> path: /
-category_archive:
-  type: liquid
-  path: /categories/
-tag_archive:
-  type: liquid
-  path: /tags/
-# https://github.com/jekyll/jekyll-archives
-# jekyll-archives:
-#   enabled:
-#     - categories
-#     - tags
-#   layouts:
-#     category: archive-taxonomy
-#     tag: archive-taxonomy
-#   permalinks:
-#     category: /categories/:name/
-#     tag: /tags/:name/
-
-
-# HTML Compression
-# - https://jch.penibelst.de/
-compress_html:
-  clippings: all
-  ignore:
-    envs: development
-
-
-# Defaults
-defaults:
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: single
-      author_profile: true
-      read_time: true
-      comments: # true
-      share: true
-      related: true
-# Welcome to Jekyll! # # This config file is meant for settings that affect your entire site, values # which you are expected to set up once and rarely need to edit after that. # For technical reasons, this file is *NOT* reloaded automatically when you use # `jekyll serve`. If you change this file, please restart the server process. # Theme Settings # # Review documentation to determine if you should use `theme` or `remote_theme` # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme # theme : "minimal-mistakes-jekyll" # remote_theme : "mmistakes/minimal-mistakes" minimal_mistakes_skin : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise" # Site Settings locale : "en-US" title : "Site Title" title_separator : "-" subtitle : # site tagline that appears below site title in masthead name : "Your Name" description : "An amazing website." url : # the base hostname & protocol for your site e.g. "https://mmistakes.github.io" baseurl : # the subpath of your site, e.g. "/blog" repository : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes" teaser : # path of fallback teaser image, e.g. "/assets/images/500x300.png" logo : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png" masthead_title : # overrides the website title displayed in the masthead, use " " for no title # breadcrumbs : false # true, false (default) words_per_minute : 200 comments: provider : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom" disqus: shortname : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname- discourse: server : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org facebook: # https://developers.facebook.com/docs/plugins/comments appid : num_posts : # 5 (default) colorscheme : # "light" (default), "dark" utterances: theme : # "github-light" (default), "github-dark" issue_term : # "pathname" (default) staticman: branch : # "master" endpoint : # "https://{your Staticman v3 API}/v3/entry/github/" reCaptcha: siteKey : secret : atom_feed: path : # blank (default) uses feed.xml search : # true, false (default) search_full_content : # true, false (default) search_provider : # lunr (default), algolia, google algolia: application_id : # YOUR_APPLICATION_ID index_name : # YOUR_INDEX_NAME search_only_api_key : # YOUR_SEARCH_ONLY_API_KEY powered_by : # true (default), false google: search_engine_id : # YOUR_SEARCH_ENGINE_ID instant_search : # false (default), true # SEO Related google_site_verification : bing_site_verification : yandex_site_verification : naver_site_verification : # Social Sharing twitter: username : facebook: username : app_id : publisher : og_image : # Open Graph/Twitter default site image # For specifying social profiles # - https://developers.google.com/structured-data/customize/social-profiles social: type : # Person or Organization (defaults to Person) name : # If the user or organization name differs from the site's name links: # An array of links to social media profiles # Analytics analytics: provider : false # false (default), "google", "google-universal", "google-gtag", "custom" google: tracking_id : anonymize_ip : # true, false (default) # Site Author author: name : "Your Name" avatar : # path of avatar image, e.g. "/assets/images/bio-photo.jpg" bio : "I am an **amazing** person." location : "Somewhere" email : links: - label: "Email" icon: "fas fa-fw fa-envelope-square" # url: "mailto:your.name@email.com" - label: "Website" icon: "fas fa-fw fa-link" # url: "https://your-website.com" - label: "Twitter" icon: "fab fa-fw fa-twitter-square" # url: "https://twitter.com/" - label: "Facebook" icon: "fab fa-fw fa-facebook-square" # url: "https://facebook.com/" - label: "GitHub" icon: "fab fa-fw fa-github" # url: "https://github.com/" - label: "Instagram" icon: "fab fa-fw fa-instagram" # url: "https://instagram.com/" # Site Footer footer: links: - label: "Twitter" icon: "fab fa-fw fa-twitter-square" # url: - label: "Facebook" icon: "fab fa-fw fa-facebook-square" # url: - label: "GitHub" icon: "fab fa-fw fa-github" # url: - label: "GitLab" icon: "fab fa-fw fa-gitlab" # url: - label: "Bitbucket" icon: "fab fa-fw fa-bitbucket" # url: - label: "Instagram" icon: "fab fa-fw fa-instagram" # url: # Reading Files include: - .htaccess - _pages exclude: - "*.sublime-project" - "*.sublime-workspace" - vendor - .asset-cache - .bundle - .jekyll-assets-cache - .sass-cache - assets/js/plugins - assets/js/_main.js - assets/js/vendor - Capfile - CHANGELOG - config - Gemfile - Gruntfile.js - gulpfile.js - LICENSE - log - node_modules - package.json - package-lock.json - Rakefile - README - tmp - /docs # ignore Minimal Mistakes /docs - /test # ignore Minimal Mistakes /test keep_files: - .git - .svn encoding: "utf-8" markdown_ext: "markdown,mkdown,mkdn,mkd,md" # Conversion markdown: kramdown highlighter: rouge lsi: false excerpt_separator: "\n\n" incremental: false # Markdown Processing kramdown: input: GFM hard_wrap: false auto_ids: true footnote_nr: 1 entity_output: as_char toc_levels: 1..6 smart_quotes: lsquo,rsquo,ldquo,rdquo enable_coderay: false # Sass/SCSS sass: sass_dir: _sass style: compressed # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style # Outputting permalink: /:categories/:title/ paginate: 5 # amount of posts to show paginate_path: /page:num/ timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones # Plugins (previously gems:) plugins: - jekyll-paginate - jekyll-sitemap - jekyll-gist - jekyll-feed - jekyll-include-cache # mimic GitHub Pages with --safe whitelist: - jekyll-paginate - jekyll-sitemap - jekyll-gist - jekyll-feed - jekyll-include-cache # Archives # Type # - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default) # - Jekyll Archives plugin archive pages ~> type: jekyll-archives # Path (examples) # - Archive page should exist at path when using Liquid method or you can # expect broken links (especially with breadcrumbs enabled) # - /tags/my-awesome-tag/index.html ~> path: /tags/ # - /categories/my-awesome-category/index.html ~> path: /categories/ # - /my-awesome-category/index.html ~> path: / category_archive: type: liquid path: /categories/ tag_archive: type: liquid path: /tags/ # https://github.com/jekyll/jekyll-archives # jekyll-archives: # enabled: # - categories # - tags # layouts: # category: archive-taxonomy # tag: archive-taxonomy # permalinks: # category: /categories/:name/ # tag: /tags/:name/ # HTML Compression # - https://jch.penibelst.de/ compress_html: clippings: all ignore: envs: development # Defaults defaults: # _posts - scope: path: "" type: posts values: layout: single author_profile: true read_time: true comments: # true share: true related: true Eng
 
 
 
-# 지킬에 오신 것을 환영합니다! # #이 구성 파일은 전체 사이트, 값에 영향을 미치는 설정을위한 것입니다. # 한 번 설정해야하며 그 후에는 거의 편집 할 필요가 없습니다. # 기술적 인 이유로이 파일은 사용할 때 자동으로 다시로드되지 * 않습니다 * #`jekyll serve`. 이 파일을 변경하는 경우 서버 프로세스를 다시 시작하십시오. # 주제 설정 # # 문서를 검토하여`theme` 또는`remote_theme`를 사용해야하는지 결정합니다. # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme # 테마 : "최소한의 실수-제킬" # remote_theme : "mmistakes / minimal-mistakes" minimal_mistakes_skin : "default"# "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise" # 사이트 설정 로케일 : "en-US" title : "사이트 제목" title_separator : "-" subtitle : # 마스트 헤드의 사이트 제목 아래에 표시되는 사이트 태그 라인 name : "너의 이름은" 설명 : "놀라운 웹 사이트." url : # 사이트의 기본 호스트 이름 및 프로토콜 (예 : "https://mmistakes.github.io" baseurl : # 사이트의 하위 경로입니다. "/ 블로그" repository : # GitHub 사용자 이름 / repo-name 예 : "mmistakes / 최소 실수" teaser : # 대체 티저 이미지의 경로, 예 : "/assets/images/500x300.png" logo : # 마스트 헤드에 표시 할 로고 이미지의 경로 (예 : "/assets/images/88x88.png" masthead_title : # 마스트 헤드에 표시된 웹 사이트 제목을 재정의합니다. 제목이 없으면 ""를 사용합니다. # breadcrumbs : false # true, false (기본값) 분당 단어 수 : 200 코멘트: provider : # false (기본값), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom" disqus : 짧은 이름 : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname- 담화: 서버 : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963, 예 : meta.discourse.org 페이스 북 : # https://developers.facebook.com/docs/plugins/comments appid : num_posts : # 5 (기본값) colorscheme : # "light"(기본값), "dark" 발화 : theme : # "github-light"(기본값), "github-dark" issue_term : # "pathname"(기본값) staticman : branch : # "마스터" endpoint : # "https : // {your Staticman v3 API} / v3 / entry / github /" reCaptcha : siteKey : 비밀 : atom_feed : 경로 : # 공백 (기본값)은 feed.xml을 사용합니다. 검색 : # 참, 거짓 (기본값) search_full_content : # true, false (기본값) search_provider : # lunr (기본값), algolia, google algolia : application_id : # YOUR_APPLICATION_ID index_name : # YOUR_INDEX_NAME search_only_api_key : # YOUR_SEARCH_ONLY_API_KEY power_by : # true (기본값), false 구글 : search_engine_id : # YOUR_SEARCH_ENGINE_ID instant_search : # false (기본값), true # SEO 관련 google_site_verification : bing_site_verification : yandex_site_verification : naver_site_verification : # 소셜 공유 트위터: 사용자 이름 : 페이스 북 : 사용자 이름 : app_id : 출판사 : og_image : # 오픈 그래프 / 트위터 기본 사이트 이미지 # 소셜 프로필 지정 #-https://developers.google.com/structured-data/customize/social-profiles 사회적인: type : # Person 또는 Organization (기본값은 Person) name : # 사용자 또는 조직 이름이 사이트 이름과 다른 경우 links : # 소셜 미디어 프로필에 대한 일련의 링크 # 분석 해석학: provider : false # false (기본값), "google", "google-universal", "google-gtag", "custom" 구글 : 추적 ID : anonymize_ip : # true, false (기본값) # 사이트 작성자 저자: name : "너의 이름은" avatar : # 아바타 이미지의 경로, 예 : "/assets/images/bio-photo.jpg" 약력 : "나는 ** 놀라운 ** 사람이다." 위치 : "어딘가" 이메일 : 연결: -label : "이메일" 아이콘 : "fas fa-fw fa-envelope-square" # URL : "mailto : your.name@email.com" -레이블 : "웹 사이트" 아이콘 : "fas fa-fw fa-link" # URL : "https://your-website.com" -라벨 : "Twitter" 아이콘 : "fab fa-fw fa-twitter-square" # URL : "https://twitter.com/" -라벨 : "Facebook" 아이콘 : "fab fa-fw fa-facebook-square" # URL : "https://facebook.com/" -레이블 : "GitHub" 아이콘 : "fab fa-fw fa-github" # URL : "https://github.com/" -라벨 : "인스 타 그램" 아이콘 : "fab fa-fw fa-instagram" # URL : "https://instagram.com/" # 사이트 바닥 글 보행인: 연결: -라벨 : "Twitter" 아이콘 : "fab fa-fw fa-twitter-square" # URL : -라벨 : "Facebook" 아이콘 : "fab fa-fw fa-facebook-square" # URL : -레이블 : "GitHub" 아이콘 : "fab fa-fw fa-github" # URL : -라벨 : "GitLab" 아이콘 : "fab fa-fw fa-gitlab" # URL : -라벨 : "Bitbucket" 아이콘 : "fab fa-fw fa-bitbucket" # URL : -라벨 : "인스 타 그램" 아이콘 : "fab fa-fw fa-instagram" # URL : # 파일 읽기 포함: -.htaccess -_ 페이지 들어오지 못하게 하다: - "* .sublime-project" - "* .sublime-workspace" -공급 업체 -.asset-cache -.bundle -.jekyll-assets-cache -.sass-cache -자산 / js / 플러그인 -assets / js / _main.js -자산 / js / 공급 업체 -캡 파일 - 변경 로그 -구성 -Gemfile -Gruntfile.js -gulpfile.js -라이센스 -로그 -노드 모듈 -package.json -package-lock.json -레이크 파일 -읽어보기 -tmp -/ docs # 최소한의 실수 무시 / docs -/ test # 최소한의 실수 무시 / test keep_files : -.git -.svn 인코딩 : "utf-8" markdown_ext : "markdown, mkdown, mkdn, mkd, md" # 변환 markdown : kramdown 형광펜 : 루즈 lsi : 거짓 excerpt_separator : "\ n \ n" 증분 : 거짓 # 마크 다운 처리 크램 다운 : 입력 : GFM hard_wrap : false auto_ids : true footnote_nr : 1 entity_output : as_char toc_levels : 1..6 smart_quotes : lsquo, rsquo, ldquo, rdquo enable_coderay : false # Sass / SCSS sass : sass_dir : _sass 스타일 : 압축 # https://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style # 출력 퍼머 링크 : / : 카테고리 / : 제목 / paginate : 5 # 표시 할 게시물 수 paginate_path : / page : num / 시간대 : # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones # 플러그인 (이전에는 gems :) 플러그인 : -지킬 페이지 -jekyll-sitemap -지킬 요지 -지킬 피드 -jekyll-include-cache # --safe로 GitHub 페이지 모방 허용 목록 : -지킬 페이지 -jekyll-sitemap -지킬 요지 -지킬 피드 -jekyll-include-cache # 아카이브 # 유형 #-Liquid로 빌드 된 GitHub Pages 호환 아카이브 페이지 ~> type : liquid (기본값) #-Jekyll Archives 플러그인 아카이브 페이지 ~> 유형 : jekyll-archives # 경로 (예제) #-Liquid 방법을 사용할 때 경로에 아카이브 페이지가 있어야합니다. # 끊어진 링크 예상 (특히 탐색 경로가 활성화 된 경우) #- /tags/my-awesome-tag/index.html ~> 경로 : / tags / #- /categories/my-awesome-category/index.html ~> 경로 : / categories / #- /my-awesome-category/index.html ~> 경로 : / category_archive : 유형 : 액체 경로 : / categories / tag_archive : 유형 : 액체 경로 : / tags / # https://github.com/jekyll/jekyll-archives # jekyll-archives : # 활성화 됨 : #-카테고리 #-태그 # 레이아웃 : # 카테고리 : 아카이브 분류 # 태그 : 아카이브 분류 영구 링크 # 개 : # 카테고리 : / categories / : 이름 / # 태그 : / tags / : 이름 / # HTML 압축 #-https://jch.penibelst.de/ compress_html : 스크랩 : 모두 무시 : envs : 개발 # 기본값 기본값 : # _posts -범위 : 경로 : "" 유형 : 게시물 값 : 레이아웃 : 단일 author_profile : true read_time : true 댓글 : # 참 공유 : 사실 관련 : 참
+
+
+
+
+
+
+
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+   - Gemfile.lock
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
